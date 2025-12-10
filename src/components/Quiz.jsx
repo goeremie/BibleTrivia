@@ -24,10 +24,12 @@ export default function Quiz() {
   const q = QUESTIONS[index];
 
   return (
-    <div className='p-8 max-w-xl mx-auto'>
-      {q.type === 'multiple' && <MultipleChoice data={q} onAnswer={handleAnswer} />}
-      {q.type === 'truefalse' && <TrueFalse data={q} onAnswer={handleAnswer} />}
-      {q.type === 'short' && <ShortAnswer data={q} onAnswer={handleAnswer} />}
+    <div className="min-h-screen flex items-center justify-center p-8">
+      <div className="quiz-container w-full max-w-xl">
+        {q.type === 'multiple' && <MultipleChoice data={q} onAnswer={handleAnswer} />}
+        {q.type === 'truefalse' && <TrueFalse data={q} onAnswer={handleAnswer} />}
+        {q.type === 'short' && <ShortAnswer data={q} onAnswer={handleAnswer} />}
+      </div>
     </div>
   );
 }

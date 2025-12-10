@@ -1,0 +1,55 @@
+/* Bible Trivia Theme Matching Portfolio */
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: black;
+  background: linear-gradient(
+    270deg,
+    #b82929,
+    #c94c4c,
+    #d87b56,
+    #d2691e
+  );
+  line-height: 1.6;
+}
+
+/* Shared card-like containers */
+.quiz-container,
+.home-container,
+.results-container {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 2rem;
+  border-radius: 20px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Buttons */
+.btn-main {
+  background: #b82929;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 16px;
+  font-weight: bold;
+  transition: 0.2s ease;
+}
+
+.btn-main:hover {
+  background: #a12323;
+}
+
+.btn-secondary {
+  background: white;
+  color: #b82929;
+  padding: 0.7rem 1.2rem;
+  border-radius: 16px;
+  font-weight: bold;
+  border: 2px solid #b82929;
+  transition: 0.2s ease;
+}
+
+.btn-secondary:hover {
+  background: #f9d4d4;
+}

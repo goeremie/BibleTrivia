@@ -6,10 +6,17 @@ export default function Results() {
   const total = state?.total ?? 0;
 
   return (
-    <div className='flex flex-col items-center p-8'>
-      <h1 className='text-3xl mb-4'>Your Results</h1>
-      <p className='text-xl mb-4'>You scored {score} out of {total}</p>
-      <Link to='/' className='mt-4 px-4 py-2 bg-green-600 text-white rounded-xl'>Play Again</Link>
+    <div className="min-h-screen flex items-center justify-center p-8">
+      <div className="results-container text-center max-w-xl">
+        <h1 className="text-3xl mb-4 text-white">Your Results</h1>
+        <p className="text-xl mb-4 text-white">
+          You scored {score} out of {total}
+        </p>
+
+        <Link to="/" className="btn-secondary inline-block mt-4">
+          Play Again
+        </Link>
+      </div>
     </div>
   );
 }
